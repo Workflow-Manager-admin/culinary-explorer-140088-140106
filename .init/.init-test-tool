@@ -1,0 +1,4 @@
+{
+    "command": "npm run test",
+    "working_directory": "/home/kavia/workspace/code-generation/culinary-explorer-140088-140106/frontend_react_app"
+}
