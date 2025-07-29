@@ -1,0 +1,28 @@
+.recipe-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2.1rem;
+  justify-content: flex-start;
+  padding: 2rem 1rem 1rem 1rem;
+}
+.no-results {
+  color: var(--accent, #E91E63);
+  font-size: 1.2rem;
+  padding: 2rem 1rem;
+  text-align: center;
+  width: 100%;
+  margin-top: 2rem;
+}
+@media (max-width: 900px) {
+  .recipe-grid {
+    gap: 1.1rem;
+    padding: 1rem .3rem .7rem .3rem;
+  }
+}
+@media (max-width: 600px) {
+  .recipe-grid {
+    flex-direction: column;
+    gap: 1.2rem;
+    padding: 1.1rem 0.2rem;
+  }
+}

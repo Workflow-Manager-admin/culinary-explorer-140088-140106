@@ -1,0 +1,100 @@
+.recipe-detail {
+  padding: 2rem 1rem 1.5rem 1rem;
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 3px 22px rgba(233,233,233,0.18);
+  margin-bottom: 2rem;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.back-btn {
+  background: var(--accent, #E91E63);
+  color: #fff;
+  border: none;
+  padding: 0.6rem 1.3rem;
+  border-radius: 7px;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-bottom: 1.2rem;
+  font-weight: 600;
+  transition: background .18s;
+}
+.back-btn:hover {
+  background: var(--primary, #4CAF50);
+}
+.detail-header {
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 2rem;
+  align-items: flex-start;
+}
+.detail-img {
+  width: 210px;
+  height: 210px;
+  object-fit: cover;
+  border-radius: 15px;
+  box-shadow: 0 0 10px rgba(0,0,0,.08);
+}
+.detail-meta {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: .2rem;
+}
+.detail-meta h2 {
+  margin: 0;
+  font-size: 2rem;
+  color: #252525;
+}
+.chip {
+  display: inline-block;
+  margin-right: 8px;
+  padding: 2px 10px;
+  border-radius: 14px;
+  font-size: .95rem;
+  font-weight: 700;
+}
+.chip-cuisine { background: var(--primary, #4CAF50); color: #fff; }
+.chip-meal { background: var(--accent, #E91E63); color: #fff; }
+.detail-desc {
+  font-style: italic;
+  color: #666;
+  margin-top: .25rem;
+  margin-bottom: 1.1rem;
+}
+.ingredients-list, .instructions-list {
+  padding-left: 1.5rem;
+  margin: .5rem 0 1.2rem 0;
+}
+@media (max-width: 900px) {
+  .detail-header {
+    flex-direction: column;
+    gap: 1.3rem;
+    align-items: stretch;
+  }
+  .detail-img {
+    width: 95vw;
+    max-width: 340px;
+    height: 180px;
+    margin: 0 auto;
+  }
+}
+@media (max-width: 600px) {
+  .recipe-detail {
+    padding: .7rem .3rem 1.2rem .3rem;
+    box-shadow: 0 1.5px 13px rgba(233,233,233,0.17);
+    margin-bottom: 1.2rem;
+  }
+  .back-btn {
+    padding: 0.5rem 1rem;
+    font-size: .97rem;
+    margin-bottom: .7rem;
+  }
+  .detail-header {
+    gap: .6rem;
+  }
+  .ingredients-list, .instructions-list {
+    margin-bottom: .6rem;
+  }
+}
